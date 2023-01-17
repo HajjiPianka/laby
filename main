@@ -4,6 +4,6 @@ using namespace std;
 
 int main() 
 {
-  cout << "Test" << endl;
+  cout << "Test zmieniania repozytorium lokalnie :)" << endl;
   return 0;
 }
