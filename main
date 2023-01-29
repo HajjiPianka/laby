@@ -2,9 +2,12 @@
 
 using namespace std;
 
+int dodawanie(int a, int b)
+{
+  return a+b;
+}
 int main() 
 {
-  cout << "Test zmieniania repozytorium lokalnie :)" << endl;
-  cout << "Test lokalnej galezi " << endl;
+  cout << "Prosty kalkulator" << endl;
   return 0;
 }
