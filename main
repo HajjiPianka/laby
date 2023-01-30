@@ -4,6 +4,7 @@ using namespace std;
 
 void podziel_dwie_liczby(int a, int b)
 {
+
     float wynik;
 
     if(b == 0)
