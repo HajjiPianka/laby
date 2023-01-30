@@ -2,12 +2,87 @@
 
 using namespace std;
 
+
 int dodawanie(int a, int b)
 {
   return a+b;
 }
-int main() 
+
+void podziel_dwie_liczby(int a, int b)
 {
-  cout << "Prosty kalkulator" << endl;
+
+    float wynik;
+
+    if(b == 0)
+    {
+        cout << "Nie mozna dzielic przez zero!\n";
+    }
+    else
+    {
+        wynik = (float) a / (float) b;
+        cout << "Wynik dzielenia: " << wynik << endl;
+    }
+}
+
+void podaj_liczby()
+{
+	cout << "Podaj dwie liczby:" << endl;
+}
+
+int main()
+{
+  int a, b;
+  cout << "Prosty kalkulator" << endl
+       << "+) Dodawanie" << endl
+       << "-) Odejmowanie" << endl
+       << "*) Mnożenie" << endl
+       << "/) Dzielenie" << endl
+       << "x) Wyjście" << endl;
+  char instrukcja;
+  bool loop = true;
+  while (loop)
+  {
+  	cin >> instrukcja;
+  	switch (instrukcja)
+  	{
+  	case '+':
+    	cout << "Podaj dwie liczby:" << endl;
+      cin >> a;
+      cin >> b;
+  		cout << a << " + " << b << " = " << dodawanie(a,b) << endl;
+      break;
+  	case '-':
+    	cout << "Podaj dwie liczby:" << endl;
+      cin >> a;
+      cin >> b;
+  		cout << a << " - " << b << " = " << endl; //ODEJMOWANIE
+      break;
+  	case '*':
+    	cout << "Podaj dwie liczby:" << endl;
+      cin >> a;
+      cin >> b;
+  		cout << a << " * " << b << " = " << endl; //MNOŻENIE
+      break;
+  	case '/':
+    	cout << "Podaj dwie liczby:" << endl;
+      cin >> a;
+      cin >> b;
+  		cout << a << " * " << b << " = " << endl; //DZIELENIE
+      break;
+  	case 'x':
+      loop = false;
+      break;
+    default:
+       cout << "Prosty kalkulator" << endl
+            << "+) Dodawanie" << endl
+            << "-) Odejmowanie" << endl
+            << "*) Mnożenie" << endl
+            << "/) Dzielenie" << endl
+            << "x) Wyjście" << endl;
+      break;
+  	}
+  }
   return 0;
 }
+
+
