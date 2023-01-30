@@ -36,6 +36,13 @@ int main()
   cout << "Wprowadz pierwsza liczbe:";
   cin >> a;
   cout << "Podaj druga liczbe:";
+  cout << "Wybierz opcje: +, -, *, /";
+  char x;
+  switch (x) {
+    case '-':
+      cout << "Wynik: " << odejmowanie(a,b) << endl;
+      break;
+  }
   return 0;
 }
 
