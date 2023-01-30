@@ -24,11 +24,6 @@ void podziel_dwie_liczby(int a, int b)
     }
 }
 
-void podaj_liczby()
-{
-	cout << "Podaj dwie liczby:" << endl;
-}
-
 int main()
 {
   int a, b;
