@@ -1,9 +1,38 @@
 #include <iostream>
 using namespace std;
+ funkcja-mnozenie
 int mnozenie(int a, int b) {
   return a*b;
 }
 int main() {
+
+
+
+int dodawanie(int a, int b)
+{
+  return a+b;
+}
+
+void podziel_dwie_liczby(int a, int b)
+{
+
+    float wynik;
+
+    if(b == 0)
+    {
+        cout << "Nie mozna dzielic przez zero!\n";
+    }
+    else
+    {
+        wynik = (float) a / (float) b;
+        cout << "Wynik dzielenia: " << wynik << endl;
+    }
+}
+
+int main()
+{
+main
   cout << "Prosty kalkulator" << endl;
   return 0;
 }
+
