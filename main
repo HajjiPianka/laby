@@ -7,5 +7,5 @@ int odejmowanie(int a, int b) { //zwroc roznice a - b
 
 int main() { //f glowna
   cout << "Prosty kalkulator" << endl;
-  return 0;
+  return 0; //no error
 }
