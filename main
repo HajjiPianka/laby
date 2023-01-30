@@ -2,9 +2,26 @@
 
 using namespace std;
 
-int main() 
+void podziel_dwie_liczby(int a, int b)
 {
-  cout << "Test zmieniania repozytorium lokalnie :)" << endl;
-  cout << "Test lokalnej galezi " << endl;
+
+    float wynik;
+
+    if(b == 0)
+    {
+        cout << "Nie mozna dzielic przez zero!\n";
+    }
+    else
+    {
+        wynik = (float) a / (float) b;
+        cout << "Wynik dzielenia: " << wynik << endl;
+    }
+}
+
+int main()
+{
+  cout << "Prosty kalkulator" << endl;
+
   return 0;
 }
+
