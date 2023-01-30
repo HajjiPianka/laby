@@ -1,11 +1,12 @@
 #include <iostream>
 using namespace std;
 
+int odejmowanie(int a, int b) { //zwroc roznice a - b
+  return a-b;
+}
 int mnozenie(int a, int b) {
   return a*b;
 }
-
-
 
 int dodawanie(int a, int b)
 {
