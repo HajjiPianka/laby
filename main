@@ -1,8 +1,10 @@
 #include <iostream>
 using namespace std;
+
 int odejmowanie(int a, int b) {
   return a-b;
 }
+
 int main() {
   cout << "Prosty kalkulator" << endl;
   return 0;
