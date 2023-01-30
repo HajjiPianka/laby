@@ -1,7 +1,12 @@
 #include <iostream>
-
 using namespace std;
 
+int odejmowanie(int a, int b) { //zwroc roznice a - b
+  return a-b;
+}
+int mnozenie(int a, int b) {
+  return a*b;
+}
 
 int dodawanie(int a, int b)
 {
@@ -40,29 +45,29 @@ int main()
   	cin >> instrukcja;
   	switch (instrukcja)
   	{
-  	case '+':
+  	case '+': //DODAWANIE
     	cout << "Podaj dwie liczby:" << endl;
       cin >> a;
       cin >> b;
   		cout << a << " + " << b << " = " << dodawanie(a,b) << endl;
       break;
-  	case '-':
+  	case '-': //ODEJMOWANIE
     	cout << "Podaj dwie liczby:" << endl;
       cin >> a;
       cin >> b;
-  		cout << a << " - " << b << " = " << endl; //ODEJMOWANIE
+  		cout << a << " - " << b << " = " << odejmowanie(a,b) << endl;
       break;
-  	case '*':
+  	case '*': //MNOŻENIE
     	cout << "Podaj dwie liczby:" << endl;
       cin >> a;
       cin >> b;
-  		cout << a << " * " << b << " = " << endl; //MNOŻENIE
+  		cout << a << " * " << b << " = " << mnozenie(a,b) << endl;
       break;
-  	case '/':
+  	case '/': //DZIELENIE
     	cout << "Podaj dwie liczby:" << endl;
       cin >> a;
       cin >> b;
-  		cout << a << " * " << b << " = " << endl; //DZIELENIE
+  		podziel_dwie_liczby(a,b);
       break;
   	case 'x':
       loop = false;
@@ -79,5 +84,3 @@ int main()
   }
   return 0;
 }
-
-
