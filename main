@@ -31,18 +31,56 @@ void podziel_dwie_liczby(int a, int b)
 
 int main()
 {
-  cout << "Prosty kalkulator" << endl;
-  int a,b;
-  cout << "Wprowadz pierwsza liczbe:";
-  cin >> a;
-  cout << "Podaj druga liczbe:";
-  cout << "Wybierz opcje: +, -, *, /";
-  char x;
-  switch (x) {
-    case '-':
-      cout << "Wynik: " << odejmowanie(a,b) << endl;
+  int a, b;
+  cout << "Prosty kalkulator" << endl
+       << "+) Dodawanie" << endl
+       << "-) Odejmowanie" << endl
+       << "*) Mnożenie" << endl
+       << "/) Dzielenie" << endl
+       << "x) Wyjście" << endl;
+  char instrukcja;
+  bool loop = true;
+  while (loop)
+  {
+  	cin >> instrukcja;
+  	switch (instrukcja)
+  	{
+  	case '+': //DODAWANIE
+    	cout << "Podaj dwie liczby:" << endl;
+      cin >> a;
+      cin >> b;
+  		cout << a << " + " << b << " = " << dodawanie(a,b) << endl;
       break;
+  	case '-': //ODEJMOWANIE
+    	cout << "Podaj dwie liczby:" << endl;
+      cin >> a;
+      cin >> b;
+  		cout << a << " - " << b << " = " << odejmowanie(a,b) << endl;
+      break;
+  	case '*': //MNOŻENIE
+    	cout << "Podaj dwie liczby:" << endl;
+      cin >> a;
+      cin >> b;
+  		cout << a << " * " << b << " = " << mnozenie(a,b) << endl;
+      break;
+  	case '/': //DZIELENIE
+    	cout << "Podaj dwie liczby:" << endl;
+      cin >> a;
+      cin >> b;
+  		podziel_dwie_liczby(a,b);
+      break;
+  	case 'x':
+      loop = false;
+      break;
+    default:
+       cout << "Prosty kalkulator" << endl
+            << "+) Dodawanie" << endl
+            << "-) Odejmowanie" << endl
+            << "*) Mnożenie" << endl
+            << "/) Dzielenie" << endl
+            << "x) Wyjście" << endl;
+      break;
+  	}
   }
   return 0;
 }
-
