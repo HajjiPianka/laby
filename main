@@ -32,6 +32,10 @@ void podziel_dwie_liczby(int a, int b)
 int main()
 {
   cout << "Prosty kalkulator" << endl;
+  int a,b;
+  cout << "Wprowadz pierwsza liczbe:";
+  cin >> a;
+  cout << "Podaj druga liczbe:";
   return 0;
 }
 
