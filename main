@@ -2,6 +2,12 @@
 
 using namespace std;
 
+
+int dodawanie(int a, int b)
+{
+  return a+b;
+}
+
 void podziel_dwie_liczby(int a, int b)
 {
 
@@ -21,7 +27,6 @@ void podziel_dwie_liczby(int a, int b)
 int main()
 {
   cout << "Prosty kalkulator" << endl;
-
   return 0;
 }
 
