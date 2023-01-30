@@ -4,8 +4,34 @@ using namespace std;
 int odejmowanie(int a, int b) { //zwroc roznice a - b
   return a-b;
 }
-
-int main() { //f glowna
-  cout << "Prosty kalkulator" << endl;
-  return 0; //no error
+int mnozenie(int a, int b) {
+  return a*b;
 }
+
+int dodawanie(int a, int b)
+{
+  return a+b;
+}
+
+void podziel_dwie_liczby(int a, int b)
+{
+
+    float wynik;
+
+    if(b == 0)
+    {
+        cout << "Nie mozna dzielic przez zero!\n";
+    }
+    else
+    {
+        wynik = (float) a / (float) b;
+        cout << "Wynik dzielenia: " << wynik << endl;
+    }
+}
+
+int main()
+{
+  cout << "Prosty kalkulator" << endl;
+  return 0;
+}
+
