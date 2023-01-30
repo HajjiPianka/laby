@@ -1,11 +1,11 @@
 #include <iostream>
 using namespace std;
 
-int odejmowanie(int a, int b) {
+int odejmowanie(int a, int b) { //zwroc roznice a - b
   return a-b;
 }
 
-int main() {
+int main() { //f glowna
   cout << "Prosty kalkulator" << endl;
   return 0;
 }
